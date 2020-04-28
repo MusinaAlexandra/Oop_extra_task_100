@@ -14,19 +14,6 @@ public class Task_100 {
     public static String[] findResults(String digits, Long expectedResult, String[] op) {
         String[] variants = findAllVariants(digits, op);
 
-        //String[] variants = new String[1];
-        //variants[0] = "9 / 8 / 7 / 6 + 54 + 3 * 2";
-        /*variants[0] = "98 + 7 + 6 - 5 - 4 * 3 / 2";
-        variants[1] = "9 + 8 + 7 + 6 + 5 + 4 + 3 + 2";
-        variants[2] = "9 - 8 - 7 - 6 - 5 - 4 - 3 - 2";
-        variants[3] = "9 * 8 * 7 + 6 - 5 / 4 / 3 + 2";
-        variants[4] = "9 * 8 * 7 * 6 * 5 * 4 * 3 * 2";
-        variants[5] = "98 + 7 * 6 + 5 - 43 - 2";
-        variants[6] = "98 + 7 * 6 - 5 / 4 * 32";
-        variants[7] = "9 + 8 - 7 / 6 * 5 + 4 - 3 * 2";
-        variants[8] = "9 + 8 - 7 + 6 - 5 + 4 - 3 + 2";
-        variants[9] = "98765432";
-        */
         List<String> result = new ArrayList<>();
         for (String var: variants) {
             if (checkAnswer(var, expectedResult)) {
